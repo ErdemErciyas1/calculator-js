@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="calcul.css">
+	
+	<title>Document</title>
+</head>
+<body>
+<div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<span class="clear">C</span>
+		<div class="screen" id="screen"></div>
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		<span onclick="buttonClick('7');">7</span>
+		<span onclick="buttonClick('8');">8</span>
+		<span onclick="buttonClick('9');">9</span>
+		<span onclick="SetOperator('/');" class="operator">/	</span>
+		
+		<span onclick="buttonClick('4');">4</span>
+		<span onclick="buttonClick('5');">5</span>
+		<span onclick="buttonClick('6');">6</span>
+		<span onclick="SetOperator('-');" class="operator">-</span>
+		<span onclick="buttonClick('1');">1</span>
+		<span onclick="buttonClick('2');">2</span>
+		<span onclick="buttonClick('3');">3</span>
+		<span onclick="SetOperator('+');" class="operator">+</span>
+		<span onclick="buttonClick('0');">0</span>
+		
+		<span>.</span>
+		<span class="eval" onclick="Calculate();">=</span>
+		<span onclick="SetOperator('*');" class="operator">x</span>
+		
+		
+
+
+	</div>
+</div>
+<script type="text/javascript" src="calcul.js"></script>
+</body>
+</html>
